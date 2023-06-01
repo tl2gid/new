@@ -1,0 +1,334 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:10px; 
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-size: inherit;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: inherit !important;
+    display:block
+}
+
+img {
+    vertical-align: middle;
+}
+
+a img {
+    border: none;
+}
+
+ol,ul,li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+
+address,
+em,
+i {
+    font-style: normal;
+}
+
+a:focus {
+    outline: none
+}
+button{
+    border:none;
+    background:none;
+    color: inherit;
+    text-decoration: inherit !important;
+    display:block
+}
+button:focus {
+    outline: none
+}
+
+
+/*-----심볼------*/
+
+/* "※" */
+.notice_symbol p {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.notice_symbol p:before {
+    content: "※";
+    position: absolute;
+    left: 6px;
+    top: 0px;
+}
+
+/* 1. */
+ol.number_symbol > li {
+    position: relative;
+    padding-left: 2rem;
+    word-break: break-word;
+}
+
+ol.number_symbol li:nth-child(n+10) {
+    padding-left: 3rem;
+}
+
+
+ol.number_symbol li:before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 0px;
+}
+
+ol.number_symbol li:first-child:before {
+    content: "1.";
+}
+
+ol.number_symbol li:nth-child(2):before {
+    content: "2.";
+}
+
+ol.number_symbol li:nth-child(3):before {
+    content: "3.";
+}
+
+ol.number_symbol li:nth-child(4):before {
+    content: "4.";
+}
+
+ol.number_symbol li:nth-child(5):before {
+    content: "5.";
+}
+
+ol.number_symbol li:nth-child(6):before {
+    content: "6.";
+}
+
+ol.number_symbol li:nth-child(7):before {
+    content: "7.";
+}
+
+ol.number_symbol li:nth-child(8):before {
+    content: "8.";
+}
+
+ol.number_symbol li:nth-child(9):before {
+    content: "9.";
+}
+
+ol.number_symbol li:nth-child(10):before {
+    content: "10.";
+}
+
+ol.number_symbol li:nth-child(11):before {
+    content: "11.";
+}
+
+ol.number_symbol li:nth-child(12):before {
+    content: "12.";
+}
+
+ol.number_symbol li:nth-child(13):before {
+    content: "13.";
+}
+
+ol.number_symbol li:nth-child(14):before {
+    content: "14.";
+}
+
+ol.number_symbol li:nth-child(15):before {
+    content: "15.";
+}
+
+ul.number2_symbol li:before {
+    content: "";
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+ul.number2_symbol li:first-child:before {
+    content: "(1)";
+}
+
+ul.number2_symbol li:nth-child(2):before {
+    content: "(2)";
+}
+
+ul.number2_symbol li:nth-child(3):before {
+    content: "(3)";
+}
+
+ul.number2_symbol li:nth-child(4):before {
+    content: "(4)";
+}
+
+ul.number2_symbol li:nth-child(5):before {
+    content: "(5)";
+}
+
+ul.number2_symbol li:nth-child(6):before {
+    content: "(6)";
+}
+
+ul.number2_symbol li:nth-child(7):before {
+    content: "(7)";
+}
+
+ul.number2_symbol li:nth-child(8):before {
+    content: "(8)";
+}
+
+ul.number2_symbol li:nth-child(9):before {
+    content: "(9)";
+}
+
+/* ① 1동그라미 */
+ul.number3_symbol li {
+    position: relative;
+    padding-left: 2rem;
+    word-break: break-word;
+}
+
+/*ul.number2_symbol li:nth-child(n+10) {
+    padding-left: 3rem;
+}*/
+
+
+ul.number3_symbol li:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+ul.number3_symbol li:first-child:before {
+    content: "① ";
+}
+
+ul.number3_symbol li:nth-child(2):before {
+    content: "②";
+}
+
+ul.number3_symbol li:nth-child(3):before {
+    content: "③";
+}
+
+ul.number3_symbol li:nth-child(4):before {
+    content: "④";
+}
+
+ul.number3_symbol li:nth-child(5):before {
+    content: "⑤";
+}
+
+ul.number3_symbol li:nth-child(6):before {
+    content: "⑥";
+}
+
+ul.number3_symbol li:nth-child(7):before {
+    content: "⑦";
+}
+
+ul.number3_symbol li:nth-child(8):before {
+    content: "⑧";
+}
+
+ul.number3_symbol li:nth-child(9):before {
+    content: "⑨";
+}
+
+/* "-" */
+.slash_symbol p{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.slash_symbol p:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 5px;
+    background-color: #222;
+    left: 6px;
+    top: 14px;
+}
