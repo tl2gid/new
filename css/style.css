@@ -827,7 +827,7 @@
 /*page1*/
 .top-ban.InsurTech-img{
     background: url(../images/insurtech.jpg)no-repeat center 55%;
-    background-size:100%;
+    background-size:cover;
 }
 .download{
     width:500px;
