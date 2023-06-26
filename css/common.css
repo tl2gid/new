@@ -661,9 +661,9 @@ footer .innerFooter .txtBox .btnBox li {
     .top-ban{
         width:90%;
         max-height:200px;
+        height:160px;
         border-radius:3rem;
         margin:9rem auto 0; 
-        background-size:cover
     }
     .point{text-align: center}
 

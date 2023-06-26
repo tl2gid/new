@@ -838,6 +838,7 @@
 .apple{
     width:50%;
     background:url(../images/apple.png)no-repeat left;
+    background-size:contain
 }
 .apple span{
     font-weight:bold; 
@@ -845,6 +846,7 @@
 .google{
     width:50%;
     background:url(../images/google.png)no-repeat left;
+    background-size:contain
 }
 .apple p,.google p{
     padding-left:6rem;
