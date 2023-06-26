@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iFA 인슈테크-인슈테크</title>
+    <title>iFA 인슈테크 & 재무설계</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon" sizes="16x16">
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
 
     <script type="text/javascript" src="/Scripts/jquery-1.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -22,6 +22,8 @@
     <!--scroll event-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--부드러운 스크롤링-->
+    <script src="js/smoothscroll.min.js"></script>
 
 </head>
 <body>   
@@ -32,30 +34,30 @@
                 <img src="images/logo.png" alt="iFA 로고">
             </a>
             <button class="menu-btn" type="button"></button>
+            <div class="menu-bg" style="display:none"></div>
             <nav class="site-navigation">
                 <ul class="site-menu ml-auto">
-                    <li id="WebControl_Top_Menu2_liMenu01"><a href="info.html" class="d-xl-block active">회사소개</a></li>
-                    <li id="WebControl_Top_Menu2_liMenu02"><a href="InsurTech.html" class="d-xl-block">인슈테크</a></li>
-                    <li id="WebControl_Top_Menu2_liMenu03"><a href="#" class="d-xl-block">보험서비스</a></li>
-                    <li id="WebControl_Top_Menu2_liMenu04"><a href="#" class="d-xl-block">채용</a></li>
+                    <li id="WebControl_Top_Menu2_liMenu01"><a href="info.html" class="d-xl-block">회사소개</a></li>
+                    <li id="WebControl_Top_Menu2_liMenu02"><a href="InsurTech.html" class="d-xl-block active">인슈테크</a></li>
+                    <li id="WebControl_Top_Menu2_liMenu03"><a href="inherit.html" class="d-xl-block">보험서비스</a></li>
+                    <li id="WebControl_Top_Menu2_liMenu04"><a href="recruit.html" class="d-xl-block">채용</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
-<main>
-    <section class="top-ban InsurTech-img">
-            <div class="txtBox">
-                <h1 class="bold">인슈테크</h1>
-                <p>InsurTech</p>
-            </div>  
-    </section>
+    <main>
+    <div class="top-ban InsurTech-img">
+        <div class="txtBox">
+            <h1 class="bold">인슈테크</h1>
+            <p>InsurTech</p>
+        </div>  
+    </div>
 
-    <section id="page1" class="page1 pg-height">
+    <section id="page1" class="page1">
         <div class="fl-inner">
             <div class="inner_left">
-                <div class="txtbox">
-                    <p class="vfa">
+                    <p class="page-icon" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/vfa-logo.png" alt="vfa">
                     </p>
                     <h1>       
@@ -63,24 +65,23 @@
                             <span class="bold d-xl-block">기회를 제공합니다.</span> 
                         </p>
                     </h1>  
-                    <p class="text" data-aos="fade-up" data-aos-duration="1400">VFA는 국내 유일의 특허받은 변액보험 펀드관리 시스템으로
-                        <br class="mo-br"> iFA에서 가입한 <br class="ta-br"> 변액보험은 물론,<br class="pc-br">
-                        타 사에서 가입한변액보험의
-                        <br class="mo-br"> 수익률 및 펀드관리까지 <br class="ta-br"> 한번에 가능합니다.
-                    </p>
-                    <div class="download">
+                    <p class="text" data-aos="fade-up" data-aos-duration="1000">VFA는 국내 유일의 특허받은 <br class="mo-br">변액보험 펀드관리 시스템으로<br class="mo-br"> 
+                        iFA에서 가입한변액보험은 물론,<br class="mo-br pc-br">
+                       타 사에서 가입한변액보험의
+                       수익률 및 <br class="mo-br"> 펀드관리까지 한번에 가능합니다.
+                   </p>
+                    <div class="download" data-aos="fade-up" data-aos-duration="1200">
                         <div class="apple">
-                        <a href="#">
+                        <a href="#" class="d-xl-block">
                             <p><span>App Store</span> 에서<br>다운로드 하기</p>
                         </a>
                         </div>
                         <div class="google">
-                        <a href="#">
+                        <a href="#" class="d-xl-block">
                             <p>다운로드 하기</p>
                         </a>
                         </div>
                     </div>
-                </div>
             </div>
             <div  class="inner_right" data-aos="fade-up" data-aos-duration="1000">
                 <img src="images/VFA.png" alt="vfa 화면 설명">
@@ -88,49 +89,57 @@
         </div>
     </section>
 
-    <section id="page2" class="page2 page2-padd">
-        <div class="fl-inner">
-            <div class="inner_right">
-                <img src="images/info-page2.png" alt="초록 빌딩">
+    <section id="page2" class="page2">
+        <div class="fl-inner fl-col-re">
+            <div class="inner_right" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/iFAONE.png" alt="iFAONE 폰화면 이미지">
             </div>
             <div class="inner_left">
-                <p class="point">Mission</p>
-                <p class="title mar-botm">
-                    개인이 은퇴준비와 고객의 뜻에 따른 자산의 세대 이전 및<br class="pc-br">
-                    상속증여를 위한 최적화된 솔루션을 제공하고, 법인의 재무상황에 부합하는
+                <p class="page-icon" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="images/iFAONE-logo.png" alt="iFAONE 로고">
                 </p>
-                <h1 class="title bold">
-                    퇴직금 플랜과 금융상품<br class="pc-br">
-                    포트폴리오를 제공합니다.
+                <p class="title mar-botm" data-aos="fade-up" data-aos-duration="1000">
+                    iFA ONE은 통합 계약관리 앱으로<br class="mo-br"> 고객이 직접 가입한<br class="pc-br">
+                    금융상품 및 재무설계에 <br class="mo-br">관한 정보를 언제든 확인할 수 있으며
+                </p>
+                <h1 class="title bold" data-aos="fade-up" data-aos-duration="1000">
+                    회사 및 담당 <br class="mo-br">FA와도<br class="ta-br"><br class="pc-br">
+                    편리하게 <br class="mo-br">소통할 수 있습니다.
                 </h1>
+                <div class="download" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="apple">
+                    <a href="#" class="d-xl-block">
+                        <p><span>App Store</span> 에서<br>다운로드 하기</p>
+                    </a>
+                    </div>
+                    <div class="google">
+                    <a href="#" class="d-xl-block">
+                        <p>다운로드 하기</p>
+                    </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <section id="page1" class="page1">
-        <div class="fl-inner">  
-            <div class="inner_left">
-                    <p class="point">InsurTech</p>         
-                    <h1 class="title bold">
-                        iFA는 은퇴와 상속에 관한<br class="pc-br">
-                        솔루션을 제공하는<br class="pc-br">
-                        인슈테크 전문기업입니다.
-                    </h1>
-                    <p class="text">
-                        VFA, 보험증권 분석 서비스, iFA ONE, 유전자 분석 기반 맞춤형 보험설계 등<br class="pc-br">
-                        인슈테크 기반의 다양한 앱과 웹/모바일 서비스를 고객과 FA 모두에게 제공하여<br class="pc-br">
-                        보험의 효용성과 가치를 극대화하고 있습니다.
-                    </p>
-            </div>
-            <div  class="inner_right" data-aos="fade-up" data-aos-duration="1000">
-                <img src="images/info-page1.png" alt="ifa 로고">
-            </div>
+    <section id="page3" class="page3">
+        <div class="inner">
+            <p class="point" data-aos="fade-up" data-aos-duration="1000">관련특허</p>
+            <h1 class="bold" data-aos="fade-up" data-aos-duration="1100">인슈테크 관련 특허 보유</h1>
+            <p class="text" data-aos="fade-up" data-aos-duration="1200">
+                변액보험을 위한 로보 어드바이저 VFA와<br class="mo-br"> 유전자 분석 기반 맞춤형 보험 설계 관련 특허를<br class="mo-br"> 보유하고 있어<br class="ta-br"><br class="pc-br">
+                고객에게 보다 전문화되고 고도화된<br class="mo-br"> 금융 서비스 경험을 선사합니다.
+            </p>
+            <ul class="fw" data-aos="fade-up" data-aos-duration="1200">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </section>
-
- 
-
-
+    </main>
+    <hr class="bot-hr"/>
     <footer>
         <div class="innerFooter">
             <div class="footer_top">

@@ -19,20 +19,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.min.js"></script>
 
-    <!--slick-->
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-    <script src="js/slick.min.js"></script>
-
     <!--scroll event-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--부드러운 스크롤링-->
     <script src="js/smoothscroll.min.js"></script>
 
+    <!--숫자 카운트-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
 </head>
 <body>   
-<div class="wrap info">
+<div class="wrap inherit">
     <header>
         <div class="innerHeader">
             <a href="index.html" class="h_logo">
@@ -42,9 +42,9 @@
             <div class="menu-bg" style="display:none"></div>
             <nav class="site-navigation">
                 <ul class="site-menu ml-auto">
-                    <li id="WebControl_Top_Menu2_liMenu01"><a href="info.html" class="d-xl-block active">회사소개</a></li>
+                    <li id="WebControl_Top_Menu2_liMenu01"><a href="info.html" class="d-xl-block">회사소개</a></li>
                     <li id="WebControl_Top_Menu2_liMenu02"><a href="InsurTech.html" class="d-xl-block">인슈테크</a></li>
-                    <li id="WebControl_Top_Menu2_liMenu03"><a href="inherit.html" class="d-xl-block">보험서비스</a></li>
+                    <li id="WebControl_Top_Menu2_liMenu03"><a href="inherit.html" class="d-xl-block active">보험서비스</a></li>
                     <li id="WebControl_Top_Menu2_liMenu04"><a href="recruit.html" class="d-xl-block">채용</a></li>
                 </ul>
             </nav>
@@ -52,516 +52,261 @@
         </div>
     </header>
     <main>
-    <div class="top-ban info-img">
+    <div class="top-ban insurance-img">
             <div class="txtBox">
-                <h1 class="bold">회사소개</h1>
-                <p>About Us</p>
+                <h1 class="bold">보험서비스</h1>
+                <p>insurance service</p>
             </div>  
     </div>
 
+    <div class="insurance-tab">
+        <ul>
+            <li><a href="#">은퇴설계</a></li>
+            <li><a href="#">보장설계</a></li>
+            <li><a href="#">투자설계</a></li>
+            <li><a href="#" class="active">상속설계</a></li>
+            <li><a href="#">위험관리</a></li>
+        </ul>
+    </div>
+
     <section id="page1" class="page1">
-        <div class="fl-inner">  
-            <div class="inner_left">
-                    <p class="point">InsurTech</p>         
-                    <h1 class="bold" data-aos="fade-up" data-aos-duration="1000">
-                        iFA는 은퇴와 상속에 관한<br class="mo-br ta-br pc-br">
-                        솔루션을 제공하는<br class="mo-br ta-br pc-br">
-                        인슈테크 전문기업입니다.
-                    </h1>
-                    <p class="text" data-aos="fade-up" data-aos-duration="1500">
-                        VFA, 보험증권 분석 서비스, iFA ONE, <br class="mo-br">유전자 분석 기반 맞춤형 보험설계 등<br class="pc-br mo-br">
-                        인슈테크 기반의 다양한 앱과 웹/모바일 서비스를<br class="mo-br">  고객과 FA 모두에게제공하여<br class="pc-br">
-                        보험의 효용성과 <br class="mo-br">가치를 극대화하고 있습니다.
-                    </p>
-            </div>
-            <div  class="inner_right" data-aos="fade-up" data-aos-duration="1000">
-                <img src="images/info-page1.png" alt="ifa 로고">
-            </div>
-        </div>
+        <h1 class="bold">상속설계</h1>
+        <p class="green">Inheritance Planning</p>
     </section>
 
-    <section id="page2" class="page2 page2-padd">
+    <section id="page2" class="page2">
         <div class="fl-inner fl-col-re">
-            <div class="inner_right" data-aos="fade-up" data-aos-duration="1000">
-                <img src="images/info-page2.png" alt="초록 빌딩">
+            <div class="inner_left" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/onestoptax.png" alt="one stop tax">
             </div>
-            <div class="inner_left">
-                <p class="point">Mission</p>
-                <p class="title mar-botm" data-aos="fade-up" data-aos-duration="1000">
-                    개인이 은퇴준비와 고객의 뜻에 따른 자산의 세대<br class="ta-br mo-br"> 이전 및<br class="pc-br">
-                    상속증여를 위한 최적화된 솔루션을 제공하고,<br class="ta-br mo-br"> 법인의 재무상황에 부합하는
-                </p>
-                <h1 class="bold" data-aos="fade-up" data-aos-duration="1500">
-                    퇴직금 플랜과 금융상품<br class="pc-br ta-br mo-br">
-                    포트폴리오를 제공합니다.
-                </h1>
+            <div  class="inner_right">
+                <div class="txtbox">
+                    <p class="page-icon" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/house.png" alt="집모양 아이콘">
+                    </p>
+                    <h1 class="bold" data-aos="fade-up" data-aos-duration="1000">
+                        상속이 쉬워지는<br>
+                        아이에프에이 금융서비스
+                    </h1>
+                    <p class="green" data-aos="fade-up" data-aos-duration="1000">Inheritance Planning</p>
+                    <ul class="pc-list"data-aos="fade-up" data-aos-duration="1200">
+                        <li>#상속재산 평가</li>
+                        <li>#상속세 계산</li>
+                        <li>#상속세 절세</li>
+                        <li>#상속세 재원 마련</li>
+                        <li>#분쟁없는 자산이전</li>
+                        <li>#유언장 공증</li>
+                        <li>#개인</li>
+                        <li>#사업자</li>
+                        <li>#법인</li>
+                        <li>#가업승계</li>
+                        <li>#정기금평가</li>
+                    </ul>
+                    <p class="text" data-aos="fade-up" data-aos-duration="1400">
+                        세무위험에 따른 절세 전략과 세금 재원 마련은 쉽게,<br>
+                        재산 분쟁 없는 유언장 공증까지 확실하게 원스톱 마무리
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="page3" class="page3">
-        <h1 class="bold">iFA Story</h1>
-        <p class="title">아이에프에이가 걸어온 길</p>
-        
-        <article class="history">
-            <div class="history-line">
-                <div class="line"></div>
+        <div class="fl-inner">  
+            <div class="inner_left">   
+                    <h1 class="bold" data-aos="fade-up" data-aos-duration="1000">
+                        자산가치 상승에 따라<br class="mo-br" /> 상속세는<br class="ta-br"/><br class="pc-br"/>
+                        이제 국민 모두가<br class="mo-br" /> 준비해야 하는 세금! 
+                    </h1>
+                    <p class="bold" data-aos="fade-up" data-aos-duration="1200">
+                        <span class="b-green count">12</span>억 <span class="b-green count">5731</span>만원
+                    </p>
+                    <p class="text" data-aos="fade-up" data-aos-duration="1400">서울 84㎡ APT 평균 실거래 가격 (22.04) (한국부동산원)</p>
+                    <span class="green" data-aos="fade-up" data-aos-duration="1400">서울 평균 실거래 가격</span>
             </div>
-            <ul class="story-inner">
-                <li>
-                <div class="st story-right story1" data-aos="fade-left" data-aos-duration="1000" >
-                    <h2>2007</h2>
-                    <ul>
-                        <li>법인설립</li>
-                        <li>제1회 한국컨설팅대상 개인재무부문 대상 수상</li>
-                        <li>재무컨설팅 경영혁신 CEO 선정 (한국경제21)</li>
-                        <li>미래를 여는 혁신기업 선정 (헤럴드경제)</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story story2" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>2009</h2>
-                    <ul>
-                        <li>삼성증권, 동부증권, 하나대투증권 제휴</li>
-                        <li>GA전용 랩어카운트 상품 개발〮출시</li>
-                        <li>대한민국 신뢰기업대상 재무컨설팅부문 선정<br class="mo-br">  (한국경제)</li>
-                        <li>대한민국 노후금융박람회(KFGG) 개최<br class="mo-br">  (일산 킨텍스)</li>
-                        <li>한국줄기세포뱅크 셀뱅킹 서비스 제휴</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story-right story3" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>2010</h2>
-                    <ul>
-                        <li>(주)와이즈에셋 합병</li>
-                        <li>(주)에셋비 합병</li>
-                        <li>제2회 한국컨설팅대상 개인재무부문 대상 수상<br class="mo-br">  (2회 연속)</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story story4" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>2011</h2>
-                    <ul>
-                        <li>롯데홈쇼핑, GS홈쇼핑 금융센터 위탁운영자 선정</li>
-                        <li>h.FC Korea 업무제휴</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story-right story5" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>2012</h2>
-                    <ul>
-                        <li>2012 대한민국 금융대상 GA부문 수상 (시사매거진)</li>
-                        <li>아이에프에이(주)  사명 변경</li>
-                        <li>아이에프에이클라우드(주) 분사</li>
-                        <li>아이에프에이(주) 오픈식 및 우수 제휴사 시상</li>
-                        <li>마스코트 범이 탄생</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story story6" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>2013</h2>
-                    <ul>
-                        <li>농협생명 신채널 / 효성ITX 전산시스템 개발 · 제공</li>
-                        <li>공개 교육프로그램 Edu-Cube 런칭 및 운영</li>
-                        <li>고객 초청 월간 오픈강좌 "iFA 소통강좌" 진행</li>
-                        <li>웅진패스원 업무제휴</li>
-                        <li>2013 iFA Convention Hongkong&Macau</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story-right story7" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>2014</h2>
-                    <ul>
-                        <li>온라인 교육 컨텐츠 "iFA TV" 런칭 및 운영</li>
-                        <li>사내 소통 월간지 "iFA Story" 창간</li>
-                        <li>자동차 보험 비교견적시스템 <br class="mo-br"> "iFA 자동차 보험센터" 오픈</li>
-                        <li>2014 iFA Convention Pattaya</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story story8" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>2015</h2>
-                    <ul>
-                        <li>iFA사용설명서 “iFA Manual book” 제작</li>
-                        <li>GA최초 리크루팅 앱 “iFA CIS” 출시</li>
-                        <li>증권분석 서비스 “iFA Compare” 오픈</li>
-                        <li>하나금융투자, NH투자증권, 미래에셋증권,<br class="mo-br">  KDB대우증권 업무제휴</li>
-                        <li>2015 iFA Convention Danang</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story-right story9" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>2016</h2>
-                    <ul>
-                        <li>업계 최초 연수공간과 캠핑의 복합시설인<br class="mo-br">  “캠프운악” 오픈</li>
-                        <li>외국계 보험사와 최초로 오더메이드 상품 "iFA VSL" 출시</li>
-                        <li>변액펀드관리 프로그램 "VFA" 개발〮배포</li>
-                        <li>신한금융투자 업무제휴</li>
-                        <li>2016 FP Conference 참가 </li>
-                        <li>2016 iFA Convention Taiwan</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story story10" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>2017</h2>
-                    <ul>
-                        <li>두번째 오더메이드 변액연금보험 "iFA VA" 출시</li>
-                        <li>변액펀드관리 프로그램 "VFA Pro버전" 출시</li>
-                        <li>재무설계 프로그램 "iFA Hope Plan" 출시</li>
-                        <li>2017 iFA WAY 설명회 개최 (제휴사 초청)</li>
-                        <li>(주)한국줄기세포뱅크 업무제휴</li>
-                        <li>2017 iFA Convention Kyushu</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story-right story11" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>2018</h2>
-                    <ul>
-                        <li>고객용 토탈서비스 앱 "iFA ONE" 출시</li>
-                        <li>국내 최초 변액펀드관리시스템 "VFA" 특허 취득</li>
-                        <li>SJ산림조합상조 업무제휴</li>
-                        <li>제노플랜 코리아 업무제휴</li>
-                        <li>㈜차바이오텍 업무제휴</li>
-                        <li>2018 iFA Convention Singapore&Cruise</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story story12" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>2019</h2>
-                    <ul>
-                        <li>메트라이프 소비자보호대상 수상</li>
-                        <li>국내 최초 수목장 보험상품 "수목장장례보험" <br class="mo-br"> 오더메이드 출시</li>
-                        <li>2019 iFA Startour Paris</li>
-                        <li>iFA MASTER CLUB 제도 시행</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story-right story13" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>2020</h2>
-                    <ul>
-                        <li>국내 최초 유전자 분석을 통한 보험설계 및 상품매칭 특허 취득</li>
-                        <li>iFA 오더메이드 변액보험 "울프변액연금보험" 출시</li>
-                        <li>국내 최초 보험인을 위한 맛집 앱 "인슐랭가이드" 출시</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story story14" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>2021</h2>
-                    <ul>
-                        <li>비대면 교육 채널 "ON LINE CLASS" 오픈</li>
-                        <li>고객용 토탈서비스 앱 "iFA ONE" Renewal 오픈</li>
-                        <li>개인정보동의 및 청약부속서류 모바일 인증 시스템 개발 및 시행</li>
-                        <li>VFA알고리즘 기반의 로보어드바이저 투자상품 <br class="mo-br"> 금융위원회 테스트베드 통과</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story-right story15" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>2022</h2>
-                    <ul>
-                        <li>iFA 다이렉트 보험센터 오픈</li>
-                        <li>iFA 상속증여연구소 설립</li>
-                        <li>웰다잉 토탈서비스 앱 "엔딩노트" 출시</li>
-                        <li>KB증권 업무제휴</li>
-                    </ul>
-                </div>
-                </li>
-                <li>
-                <div class="st story story16" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>2023</h2>
-                    <ul>
-                        <li>iFA 일반화재 보험센터 오픈</li>
-                    </ul>
-                </div>
-                </li>
-            </ul>
-        </article>
-        
+            
+        </div>
     </section>
 
     <section id="page4" class="page4">
-        <p class="title" data-aos="fade-up" data-aos-duration="1000">사업단 현황</p>
-        <h1 class="bold" data-aos="fade-up" data-aos-duration="1000">오늘을 준비한 사람들이 모여,<br class="ta-br mo-br"> 내일의 변화를 만듭니다.</h1>   
-
-        <div class="place fw">
-            <ul class="slider-wrap">
-                <li class="slide"><a href="#" class="active" onclick="return false">서울</a></li>
-                <li class="slide"><a href="#" onclick="return false">경기</a></li>
-                <li class="slide"><a href="#" onclick="return false">인천</a></li>
-                <li class="slide"><a href="#" onclick="return false">강원</a></li>
-                <li class="slide"><a href="#" onclick="return false">충청</a></li>
-                <li class="slide"><a href="#" onclick="return false">전라</a></li>
-                <li class="slide"><a href="#" onclick="return false">경상</a></li>
-                <li class="slide"><a href="#" onclick="return false">제주</a></li>     
-            </ul>
-        </div>
-
-        <div class="place-cont" data-aos="fade-up" data-aos-duration="1000">
-            <ul class="fw fl-inner">
-                <li>
-                    <div class="p-cont">
-                        <a href="#" data-bs-toggle="modal"  data-bs-target="#p-cont-map">
-                            <img src="images/R.V.png" alt="R.V">
-                            <div class="p-cont-text">
-                                <h2>R.V</h2>
-                                <p>서울특별시 강남구 논현동 34길 32, <br>4층 (도곡동, 하나빌딩)</p>
-                                <span class="go">자세히 보기</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="p-cont">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#p-cont-map">
-                            <img src="images/iFAs.png" alt="iFAs 건물">
-                            <div class="p-cont-text">
-                                <h2>iFAs</h2>
-                                <p>서울특별시 강남구 논현로 75길 5-2, 
-                                    <br>2층 (역삼동, HR빌딩)</p>
-                                <span class="go">자세히 보기</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="p-cont">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#p-cont-map">
-                            <img src="images/FP-korea.png" alt="FP코리아 건물">
-                            <div class="p-cont-text">
-                                <h2>FP코리아</h2>
-                                <p>서울특별시 강남구 봉은사로 38길 4,
-                                    <br>3층 (역삼동, 에이앤디빌딩)</p>
-                                <span class="go">자세히 보기</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="p-cont">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#p-cont-map">
-                            <img src="images/AlltheFinance.png" alt="ALL the Finance 건물">
-                            <div class="p-cont-text">
-                                <h2>ALL the Finance</h2>
-                                <p>서울특별시 강남구 자곡로 174-10,
-                                    <br>1019호 (자곡동, 에이스타워 G9)</p>
-                                <span class="go">자세히 보기</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="p-cont">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#p-cont-map">
-                            <img src="images/jung.png" alt="정재무설계">
-                            <div class="p-cont-text">
-                                <h2>정재무설계</h2>
-                                <p>서울특별시 강남구 테헤란로 313, 
-                                    <br>1218호(역삼동, 성지하이츠1)</p>
-                                <span class="go">자세히 보기</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="p-cont">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#p-cont-map">
-                            <img src="images/policy fund.png" alt="정책자금상담센터">
-                            <div class="p-cont-text">
-                                <h2>정책자금상담센터</h2>
-                                <p>서울특별시 강서구 마곡서로 133, 
-                                    <br>713동 1004호(마곡동, 엠밸리7단지)</p>
-                                <span class="go">자세히 보기</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="p-cont">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#p-cont-map">
-                            <img src="images/nest.png" alt="네스트경영연구원">
-                            <div class="p-cont-text">
-                                <h2>네스트경영연구원</h2>
-                                <p>서울특별시 강서구 마곡서로 158, 
-                                    <br>1116호(센트럴타워 2차)</p>
-                                <span class="go">자세히 보기</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="p-cont">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#p-cont-map">
-                            <img src="images/siseon.png" alt="시선 사무실">
-                            <div class="p-cont-text">
-                                <h2>시선</h2>
-                                <p>서울특별시 강서구 마곡서로 56, 
-                                    <br>703호(마곡동, 우성에스비타워3차)</p>
-                                <span class="go">자세히 보기</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- Modal -->
-      <div class="modal fade" id="p-cont-map" role="dialog" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">   
-        <div class="modal-dialog modal-dialog-centered  modal-xl">
-          <div class="modal-content">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-body fl-inner fw">               
-                <article class="inner_left">
-                    <div id="mainImg" class="mainImg">
-                        <img src="images/place-modal-thums1.png" alt="건물 사진 크게 보기" />
-                    </div>
-                    <div class="thumbs">
-                        <img src="images/place-modal-thums1.png" alt="건물사진1"/>
-                        <img src="images/place-modal-thums1.png" alt="건물사진2"/>
-                        <img src="images/place-modal-thums1.png" alt="건물사진3"/>
-                        <img src="images/place-modal-thums1.png" alt="건물사진4"/>
-                    </div>
-                    <p class="modal-text">개인의 은퇴준비와 고객의 뜻에 따른 자산의 세대 이전 및 상속증여를 위한 최적화된 솔루션을 제공합니다.</p>
-
-                    <aside class="map-text">
-                        <p>
-                            <h2>iFAs</h2>
-                            <p>서울특별시 강남구 논현로 75길 5-2, 2층 (역삼동, HR빌딩)</p>
-                        </p>
-                        
-                        <div>
-                            <h2>관리자</h2>
-                            <p>최무영</p>
-                        </div>
-                        
-                        <div>
-                            <h2>연락처</h2>
-                            <p>02-6237-3303</p>
-                        </div>
-                        
-                    </aside>
-                    <span class="go">해당지점 사이트 바로가기</span>
-                </article>
-                <article class="inner_right">
-                    <img src="images/map.png" alt="지도예시">
-                </article>
+        <div class="fl-inner fl-col-re">  
+            <div class="inner_left fl-col-re" data-aos="fade-up" data-aos-duration="1000">   
+                <p class="text">상속재산에 따른 상속세 변화</p>
+                <img src="images/tax graph2.png" alt="상속세 그래프">
             </div>
-          </div>
+            <div class="inner_right">
+                <h1 class="bold" data-aos="fade-up" data-aos-duration="1000">
+                    평균 상속세는?
+                </h1>
+                <p class="bold" data-aos="fade-up" data-aos-duration="1200">
+                    <span class="b-green count">3171</span> 만원
+                </p>
+                <p class="text" data-aos="fade-up" data-aos-duration="1200">서울 주민 평균 상속세<br class="mo-br"> (일괄공제, 배우자공제 각각 5억 적용 시)</p>
+            </div>
         </div>
-      </div>
-        <button class="more" type="button">더보기</button>
     </section>
 
     <section id="page5" class="page5">
-        <p class="title">PARTNER</p>
-        <h1 class="bold" data-aos="fade-up" data-aos-duration="1000">
-            iFA와 함께하는 파트너를<br class="mo-br pc-br">
-            소개합니다.
-        </h1> 
-        <div class="cont1" data-aos="fade-up" data-aos-duration="1000">
-            <h2>생명보험 제휴사</h2>
-            <ul class="fw">
-                <li><img src="images/logo/1/레이어 2.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 3.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 4.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 5.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 6.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 7.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 8.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 9.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 10.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 11.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 12.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 13.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 14.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 15.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 16.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 17.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 18.png" alt="생명보험제휴사"></li>
-                <li><img src="images/logo/1/레이어 19.png" alt="생명보험제휴사"></li>
-            </ul>
+        <div class="fl-inner">  
+            <div class="inner_left">   
+                <h1 class="title" data-aos="fade-up" data-aos-duration="1000">
+                    절세 및 재원마련에 가장 많이 활용된 수단은<br>
+                    <ul>
+                        <li class="bold">종신</li>
+                        <li class="x-txt"></li>
+                        <li class="bold">연금보험</li>
+                    </ul>
+                </h1>
+                <p class="green" data-aos="fade-up" data-aos-duration="1000">Insurance</p>   
+                <ul class="pc-list" data-aos="fade-up" data-aos-duration="1200">
+                    <li>#국세청에서 추천하는 납세자금 마련 방법</li>
+                    <li>#사망험금 레버리지</li>
+                    <li>#연금 정기금 평가</li>
+                    <li>#실효세율 하락</li>
+                    <li>#원금 손실 리스크 없음</li>
+                    <li>#자녀 명의로 가입 시 세금 없음</li>
+                </ul>
+            </div>
         </div>
-        <div class="cont2" data-aos="fade-up" data-aos-duration="1200">
-            <h2>손해보험 제휴사</h2>
-            <ul class="fw">
-                <li><img src="images/logo/2/레이어 2.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 3.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 4.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 5.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 6.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 7.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 8.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 9.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 10.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 11.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 12.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/2/레이어 13.png" alt="손해보험제휴사"></li>
-            </ul>
-            
-        </div>
-        <div class="cont3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">
-            <h2>손해보험 제휴사</h2>
-            <ul class="fw">
-                <li><img src="images/logo/3/레이어 2.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/3/레이어 3.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/3/레이어 4.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/3/레이어 5.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/3/레이어 6.png" alt="손해보험제휴사"></li>
-                <li><img src="images/logo/3/레이어 7.png" alt="손해보험제휴사"></li>
-            </ul>
+    </section>  
+
+    <section id="page6" class="page6">
+        <div class="inner">
+        <h1 class="bold" data-aos="fade-up" data-aos-duration="1000">막상 상속 준비를 하려고하니<br class="ta-br mo-br"> 너무 어렵고 답답해요</h1>
+        <p class="text" data-aos="fade-up" data-aos-duration="1200"><span class="point">Check Point</span>아래 항목 중 하나라도 해당된다면<br class="ta-br mo-br"> 아이에프에이 상속설계 서비스를 이용해 보세요.</p>
+        <ul class="fl-inner">
+            <li>
+                <div class="check-bg">
+                    <img src="images/check-icon.png" alt="check" data-aos="zoom-in" data-aos-duration="1000">
+                </div>
+                <p>재산 상속 시<br>가족 간의<br>갈등이 예상돼요.</p>
+            </li>
+            <li>
+                <div class="check-bg">
+                    <img src="images/check-icon.png" data-aos-delay="100" alt="check" data-aos="zoom-in" data-aos-duration="1000">
+                </div>
+                <p>상속인이 다수인 경우<br>유언장은 꼭 작성해야<br>하는지 궁금해요.</p>
+            </li>
+            <li>
+                <div class="check-bg">
+                    <img src="images/check-icon.png" data-aos-delay="200" alt="check" data-aos="zoom-in" data-aos-duration="1000">
+                </div>
+                <p>상속재산을 보유하는<br>동안 세금이 부담<br>스러운데 사전증여를<br>해야하나요?</p>
+            </li>
+            <li>
+                <div class="check-bg">
+                    <img src="images/check-icon.png" data-aos-delay="300" alt="check" data-aos="zoom-in" data-aos-duration="1000">
+                </div>
+                <p>상속세를 납부하기<br>위한 자금을 어떻게<br>마련해야 할지<br>모르겠어요.</p>
+            </li>
+            <li>
+                <div class="check-bg">
+                    <img src="images/check-icon.png" data-aos-delay="400" alt="check" data-aos="zoom-in" data-aos-duration="1000">
+                </div>
+                <p>상속세를 절세하는<br>방법을 잘 모르고,<br>믿을 만한 전문가를<br>찾기 어려워요.</p>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="page7" class="page7">
+        <div class="fl-inner fl-col-re">
+            <div class="inner_left" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/Counseling.png" alt="Counseling">
+            </div>
+            <div  class="inner_right">    
+                <h1 class="bold" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="title">최고의 전문가 집단인 상속증여연구소 설립!</p>
+                    만족도 높은 상담을<br class="mo-br"/> 경험하세요
+                </h1> 
+                <ul class="fl-inner fw" data-aos="fade-up" data-aos-duration="1200">
+                    <li>
+                         <span class="point">1</span>
+                         <h2 class="title">
+                            분석
+                            <p class="green">ANALYSIS</p>
+                         </h2>
+                         <p>상속재산과 세무리스크<br class="mo-br"> 분석 <br class="pc-br">상속인 현황 파악 및<br class="mo-br"> 문제점 도출</p>
+                    </li>
+                    <li>
+                         <span class="point">2</span>
+                         <h2 class="title">
+                            해법
+                            <p class="green">SOLUTION</p>
+                        </h2>
+                         <p>산출세액에 따른 절세<br class="mo-br"> 원리 및 전략, <br class="pc-br">재원 마련<br class="mo-br"> 해법 정리</p>
+                    </li>
+                    <li>
+                         <span class="point">3</span>
+                         <h2 class="title">
+                            제안
+                            <p class="green">CONSULTING</p>
+                        </h2>
+                         <p>케이스별 상속·증여<br class="mo-br"> 사례를 <br class="pc-br">입체분석하여<br class="mo-br"> 최적의 컨설팅 제시</p>
+                    </li>
+                    <li>
+                         <span class="point">4</span>
+                         <h2 class="title">
+                            공증
+                            <p class="green">POUR OVER WILL</p>
+                        </h2>
+                         <p>상속재산에 대한 법률<br class="mo-br">관계 정리 <br class="pc-br">공정증서<br class="mo-br"> 유언 별도 진행</p>
+                    </li>
+                </ul>  
+            </div>
         </div>
     </section>
 
-    <section class="iFA-news pg-height">
-        <div class="inner">
-            <h1 class="bold"><span>아이에프에이 소식</span></h1>
-            <ul class="newsBox">
-                <li>
-                    <a href="#" class="d-xl-block">
-                        <p class="txt"><span>[준법감시] </span>GA업무광고 실태점검 실시</p>
-                        <p class="date">2023.01.26</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="d-xl-block">
-                        <p class="txt"><span>[금융자료] </span>2022년 세제개편안 발표</p>
-                        <p class="date">2022.07.21</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="d-xl-block">
-                        <p class="txt"><span>[준법감시] </span>GA업무광고 실태점검 실시</p>
-                        <p class="date">2022.05.19</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="d-xl-block">
-                        <p class="txt"><span>[준법감시] </span>GA업무광고 실태점검 실시</p>
-                        <p class="date">2023.01.26</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="d-xl-block">
-                        <p class="txt"><span>[준법감시] </span>GA업무광고 실태점검 실시</p>
-                        <p class="date">2023.01.26</p>
-                    </a>
-                </li>
-            </ul>
-            <button class="news_btn">더보기</button>
+    <section id="page8" class="page8">
+        <div class="fl-inner">
+            <div class="inner_left">
+                <h1>
+                    <p class="title" data-aos="fade-up" data-aos-duration="1000">누구나 쉽고 편하게 사용 가능해요<br>
+                    <span class="bold d-xl-block">상속세가 얼마 나올지<br class="ta-br mo-br"/> 궁금하세요?</span></p>
+                </h1>
+                <p class="text" data-aos="fade-up" data-aos-duration="1200">
+                    최신 세법 완벽 반영상속세 간편버전 및<br class="mo-br" />  디테일한 계산이 가능한<br class="ta-br"/> 상속세 상세버전<br class="pc-br mo-br"/>
+                    그 외에도 다양한 계산 기능 제공
+                </p>
+                <a href="#" data-aos="fade-up" data-aos-duration="1400" class="go d-xl-inlineb">세금 계산하기</a>
+            </div>
+            <div class="inner_right" data-aos="fade-up" data-aos-duration="1000" >
+                <img src="images/inheritance tax.png" alt="상속세 계산기 모바일 화면">
+            </div>
         </div>
-    </section> 
-    </main>
+    </section>
+
+    <section id="page9" class="page9">
+        <div class="fl-inner fl-col-re">
+            <div data-aos="fade-up" data-aos-duration="1000" class="inner_left">
+                <img src="images/ending note.png" alt="엔딩노트 모바일 화면">
+            </div>
+            <div class="inner_right">
+                    <p class="page-icon" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/ending note-logo.png" alt="엔딩노트 아이콘">
+                    </p>
+                    <h1>
+                        <p class="title" data-aos="fade-up" data-aos-duration="1000">
+                            품위있는 삶의 마무리 엔딩노트
+                            <span class="bold d-xl-block">대화형 형식으로<br> 유언장 작성도<br class="ta-br"/> 쉽고 편하게!</span>
+                        </p>
+                    </h1>
+                    <ul class="fl-inner" data-aos="fade-up" data-aos-duration="1200">
+                        <li class="title"><p>유언<br>상속</p></li>
+                        <li class="title"><p>엔딩<br>노트</p></li>
+                        <li class="title"><p>버킷<br>리스트</p></li>
+                    </ul>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1400" class="d-xl-inlineb">
+                        <img src="images/apple2.png" alt="애플스토어 바로가기">
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1400" class="d-xl-inlineb">
+                        <img src="images/google2.png" alt="구글스토어 바로가기">
+                    </a>
+            </div>
+        </div>
+    </section>
+    </main>   
+    <hr class="bot-hr"/>
     <footer>
         <div class="innerFooter">
             <div class="footer_top">
@@ -592,7 +337,8 @@
             </div>
             
         </div>
-    </footer>     
+    </footer>
+      
       <!-- Modal -->
       <div class="modal fade" id="privacy1" role="dialog" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">   
         <div class="modal-dialog modal-dialog-scrollable modal-xl">
@@ -1502,4 +1248,8 @@
 
 </div><!--wrap-->
 </body>
+<script>
+         //보험서비스 카운트
+         $('.count').countUp({delay: 10,time: 1200});
+</script>
 </html>
